@@ -77,7 +77,6 @@ def update_display(text_widget):
     text_widget.insert(tk.END, "=" * 65 + "\n")
     text_widget.config(state=tk.DISABLED)
 def submit_transaction(type_var, date_entry, amount_entry, desc_entry, text_widget):
-    """Handles submission of a new transaction from the GUI."""
     t_type = type_var.get()
     t_date = date_entry.get()
     t_desc = desc_entry.get().strip()
